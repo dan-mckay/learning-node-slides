@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Learning Node - Daniel McKay</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Learning Node</h1>
+					<img class="no-border" src="img/node-logo.png">
+					<h3>Using Node.js In My Final Year At College</h3>
+					<p>
+						<small>Daniel McKay / <a href="http://twitter.com/dmpmck">@dmpmck</a></small>
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+
+				<section>
+					<h1>Hello Everyone</h1>
+					<br>
+					<h2>Daniel McKay</h2>
+					<ul>
+						<li>Twitter - <a href="http://twitter.com/dmpmck">@dmpmck</a></li>
+						<li>Github - <a href="https://github.com/dmcaodha">dmcaodha</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<!-- Example of nested vertical slides -->
+					<section>
+						<h2>What's This Course Then?</h2>
+						<br>
+						<h4>IADT - Dún Laoghaire</h4>
+
+						<p>BSc Hons - Computing </p>
+						<p><small>(Multimedia Systems / Web Engineering)</small></p>
+					</section>
+
+					<section>
+						<h2>What We Studied</h2>
+						<ul>
+							<li>Java - OOP, Data Structures, Algorithms</li>
+							<li>Web Development - HTML, CSS, PHP</li>
+							<li>Hardware & Operating Systems</li>
+							<li>Software Engineering</li>
+							<li>Networks - Protocols, Socket Programming</li>
+							<li>Databases - Relational</li>
+							<li>Maths - Computer Modelling, Stats</li>
+							<li>...Loads of other stuff</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Survey Project</h2>
+						<ul>
+							<li>Web Application - PHP</li>
+							<li>Native Android Application - Java</li>
+							<li>Data Exchange - XML</li>
+							<li>Database - MySQL</li>
+						</ul>
+					</section>
+
+					<section>
+						<img class="no-border" src="img/poster.png">
+					</section>
+
+				</section>
+
+				<section>
+					<p><em>If I had to do it all again...</em></p>
+					<h2>What Would I Do Differently?</h2>
+				</section>
+
+				<section>
+					<h2>Make Some Changes...</h2>
+					<ol>
+						<li>Strip out the native Android App</li>
+						<li>Make a mobile Web app</li>
+						<li>Use more JavaScript</li>
+						<li>Use JSON for data exchange</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Research</h2>
+					<ul>
+						<li>Native versus Web</li>
+						<li>
+							Article: <a href="http://venturebeat.com/2011/08/16/linkedin-node/">How Linkedin used Node.js and HTML5 to build a better app</a>
+						</li>
+						<li>
+							Talk: <a href="http://www.youtube.com/watch?v=hMd45Ij2DYQ">HTML5 Lessons from LinkedIn using Node.js</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What They Said...</h2>
+					<ul>
+						<li>Their app is mainly I/O bound</li>
+						<li>Node's evented, non-blocking model suits this use case</li>
+						<li>A single process handles many connections</li>
+						<li>Node is good at talking to external services over HTTP</li>
+						<li>Client developers can work on server-side code</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>I Was Intrigued...</h2>
+					<br>
+					<p>I wanted to take a look at the technology for my final project</p>
+					<br>
+					<p><em>but I hadn't programmed with JavaScript...</em></p>
+					<br>
+					<p>...luckily, we had an upcoming JavaScript programming module in college.</p>
+				</section>
+
+				<section>
+					<h2>Project Meeting - Initial Conversation</h2>
+					<p>Me: <em>I want to write a Node app.</em></p>
+					<p>Supervisor: <em>Why?</em></p>
+					<p>Me: <em>'Cos it sounds cool.</em></p>
+					<p>Supervisor: <em>You'll have to do better than that.</em></p>
+				</section>
+
+				<section>
+					<h2>Between Us We Came Up With A Project</h2>
+					<p>Developing in the Cloud with Node.js</p>
+					<p><em>A study in Node development using cloud services</em></p>
+					<br>
+					<h3>Research</h3>
+					<ul>
+						<li>Web hosting versus the cloud</li>
+						<li>Web server programs</li>
+						<li>Node - under the hood</li>
+						<li>How to write a Node app</li>
+					</ul>
+				</section>
+
+				<section>
+					<img class="no-border" src="img/node-cloud.png">
+				</section>
+
+				<section>
+					<h2>Where to now?</h2>
+				</section>
+
+				<section>
+					<h2>Node Dublin 2012 Came Along</h2>
+					<p>A chance to hear about all the great things people were doing with Node.js from across the world:</p>
+					<br>
+					<ul>
+						<li>Real-time systems</li>
+						<li>Streams</li>
+						<li>How to write big apps</li>
+						<li>A cloud-based OS written in Node</li>
+						<li>Genetic algorithms in the browser</li>
+						<li>The open source movement</li>
+						<li>F***ing robots - Johnny-Five is alive!</li>
+					</ul>
+					<br><br>
+					<p><small>There was even a fellow talking about Lego in a wizard's hat made out of a Doritos bag :)</small></p>
+				</section>
+
+				<section>
+					<h2>Arduino</h2>
+					<p>
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/5-seNmeIHXw?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+					</p>
+					<p><small>43 lines of code - johnny-five and socket.io</small></p>
+				</section>
+
+				<section>
+					<h2>Back To The Project</h2>
+					<p>
+						Need to start doing some real work!
+					</p>
+					<img src="http://yehudafm.files.wordpress.com/2011/01/stressed-out.jpg">
+				</section>
+
+				<section>
+					<h2>Building A Node App - Resources</h2>
+					<ol>
+						<li>Online:</li>
+							<ul>
+								<li><a href="http://nodeguide.com/index.html">Felix's Node.js Guide</a></li>
+								<li><a href="http://book.mixu.net/">Mixu's Node Book</a></li>
+								<li><a href="https://tutsplus.com/course/introduction-to-node-js/">Introduction to Node Tutorials</a></li>
+								<li><a href="http://coenraets.org/blog/">Christophe Coenraets Blog</a></li>
+							</ul>
+						<li>Books:</li>
+							<ul>
+								<li><a href="http://shop.oreilly.com/product/0636920024606.do">Learning Node - Shelley Powers</a></li>
+								<li><a href="http://shop.oreilly.com/product/0636920024606.do">Beginning Mobile Application Development in the Cloud - Richard Rodger</a></li>
+								<li><a href="http://smashingnode.com/">Smashing Node.JS - Guillermo Rauch</a></li>
+							</ul>
+					</ol>
+					
+				</section>
+
+				<section>
+					<h2>Dischost</h2>
+					<img src="img/default.png">
+					<ul>
+						<li>Cloud-based music database service</li>
+						<li>Allows users to store and play digital music from the browser</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Application Architecture</h2>
+					<ul>
+						<li>Express Web Framework - RESTful, session support</li>
+						<li>Socket.io - Real-time features</li>
+						<li>CouchDB - JSON document store</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/system-model.png">
+				</section>
+
+				<section>
+					<h2>A Small Demo</h2>
+					<p>I hope it works...</p>
+					<img src="http://www.burghfieldsailing.org/images/pagemaster/crossed_fingers.jpg">
+				</section>
+
+				<section>
+					<h2>What I learned</h2>
+					<ul>
+						<li>A whole lot about writing JavaScript</li>
+						<li>A whole lot more about general app development</li>
+						<li>There's a great community surrounding this technology</li>
+					</ul>
+					<br><br>
+					<p>Go to meet-ups, speak to them and build something</p>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>Thanks For Listening.</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
